@@ -1,0 +1,129 @@
+---
+---
+
+@import url(https://use.fontawesome.com/releases/v5.7.0/css/all.css);
+
+// @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,400,700);
+// $font-family-base:Nunito;
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:200,300,400,700);
+$headings-font-family:Comfortaa;
+
+@import url(https://fonts.googleapis.com/css?family=Muli:200,300,400,700);
+$font-family-base:Muli;
+
+// bootstrap.themes.guide/#themes
+// @import url(https://fonts.googleapis.com/css?family=Muli:200,300,400,700);
+// $headings-font-family:Muli;
+// themes from https://bootstrap.themes.guide/#themes
+// $primary:#FF304F;
+// $secondary:#CACACA;
+// $success:#015668;
+// $danger:#06648C;
+// $info:#0F81C7;
+// $warning:#0DE2EA;
+// $light:#ececec;
+// $dark:#222222;
+
+
+$primary:#083358;
+$secondary:#F67280;
+$success:#0074E4;
+$danger:#FF4057;
+$info:#74DBEF;
+$warning:#FC3C3C;
+$light:#F2F2F0;
+$dark:#072247;
+
+
+// bootstrap + default variables
+@import 'bootstrap/bootstrap';
+
+.navbar {
+    font-family: $headings-font-family;
+}
+
+h1 {
+    color: $primary;
+}
+
+h2 {
+    color: $secondary;
+}
+
+#contact {
+    h1 {
+        color: $secondary;
+    }
+
+    h2 {
+        color: $primary;
+    }
+}
+
+.subtitle {
+    margin-bottom:.5em;
+}
+
+.social-media-icons {
+    margin-bottom:0em;
+}
+
+.nav-link {
+    font-size: 1.1em;
+}
+
+a {
+    color: $primary;
+}
+
+
+.card {
+    margin-top:10px;
+    padding: 10px;
+    .project-card {
+        background-color: $light;
+    }
+}
+
+.project-link {
+    text-align: center;
+    margin-bottom:0px;
+}
+
+.contact-link {
+    color: $primary;
+}
+
+.profPic {
+    border-radius:50%;
+    max-width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-bottom:10px;
+}
+
+
+.project-image {
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-bottom:10px;
+    max-width: 100%;
+}
+
+.resume-image{
+    display:block;
+    max-width:100%;
+}
+
+#profile {
+    text-align: center;
+}
+
+.footer {
+    margin-top:10px;
+    background-color: $dark;
+    min-height: 50px;
+}

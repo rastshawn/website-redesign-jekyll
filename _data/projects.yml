@@ -1,0 +1,15 @@
+- title: TrackRecord
+  description: '
+  <p>NestJS / Vue web app for logging and exploring your Spotify listening history. </p>
+    <p>Useful for recreating that group-collab road trip playlist or re-living a day in the life of a past you.</p>
+  <p class="project-link"><a href="https://github.com/rastshawn/spotify-history-sharer"><i class="fab fa-github fa-lg"></i> spotify-history-sharer</a></p>
+  <p class="project-link"><a href="https://trackrecordlive.shawnrast.com"><i class="fas fa-external-link-square-alt fa-lg"></i>  go to TrackRecord</a></p>
+  '
+  imgsrc: TimeMachine.png
+- title: gp_bot
+  description: '
+  <p>NodeJS-powered inside joke machine fed by Wikipedia articles, Reddit pages, and a random number generator that links to a MySQL database. </p>
+  <p>Takes input from and sends output to a GroupMe group chat.</p>
+  <p class="project-link"><a href="https://github.com/rastshawn/general-purpose-groupme-bot"><i class="fab fa-github fa-lg"></i> general-purpose-groupme-bot</a></p>
+  '
+  imgsrc: groupMe.jpg

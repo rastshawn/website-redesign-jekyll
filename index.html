@@ -1,0 +1,154 @@
+---
+layout: default
+title: Shawn Rast
+---
+
+<!--https://medium.com/better-programming/an-introduction-to-using-jekyll-with-bootstrap-4-6f2433afeda9
+https://jekyllrb.com/docs/step-by-step/07-assets/
+https://getbootstrap.com/docs/4.5/components/alerts/
+https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons
+-->
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card border-primary" id="profile">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-12">
+                <img class="profPic" src="assets/images/headshot.jpg"></img>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-12">
+                    <h1 class="profile-name">Shawn Rast</h1>
+                    <h2 class="subtitle">Developer.</h2>
+                    <!--social media-->
+                    <p class="social-media-icons">
+                        <a href="https://twitter.com/rastshawn"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="https://github.com/rastshawn"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/rastshawn/"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </p>
+                    <p class="prof-link" style="margin-bottom:0em; margin-top:.25em;"><a href="assets/resume.pdf"><i class="far fa-file-alt fa-lg"></i> Resume</a></p>
+                    <p class="prof-link" style="margin-bottom:0em"><a href="mailto:me@shawnrast.com"><i class="far fa-paper-plane fa-lg"></i> me@shawnrast.com</a></p>
+                    <p class="prof-link" ><a href="https://github.com/rastshawn"><i class="fab fa-github fa-lg"></i> https://github.com/rastshawn</a></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card border-primary" id="skills">
+            <h2 class="card-title">Skills.</h2>
+            <p>JavaScript (NodeJS, Typescript, Vue/Vuex), Java, Python, C++, PHP, SQL</p>
+            <p>Amazon Web Services, Azure DevOps Server (TFS), Visual Studio, Nginx</p>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="card border-primary" id="about">
+            <h2 class="card-title">About.</h2>
+            <p><strong>Developer, musician, and car enthusiast located in the greater Houston area.</strong> Before I picked up the automotive bug, I considered myself a round-the-clock keyboardist.</p>
+            <p>I'm always interested in new opportunities, particularly in remote work.</p>
+        </div>
+        <div class="card border-primary" id="projects">
+            <h2 class="card-title">Projects.</h2>
+            {% for project in site.data.projects %}
+            <div class="card project-card">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="project-title">{{project.title}}</h3>
+                        {{project.description}}
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                        <img src="/assets/images/{{project.imgsrc}}" class="project-image"></img>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}  
+        </div>
+
+        <div class="card border-primary" id="other-projects">
+            <h2 class="card-title">Other projects.</h2>
+            
+            <div class="card project-card">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="project-title">'97 Mazda Miata</h3>
+                        <p>Takes about the same amount of time as a full time job, while costing about as much as I'd earn.</p>
+                        <p>In progress is a Raspberry Pi-based in-car computer to interface with the radio, record video as a dash cam, and record driving data for Autocross runs. I've built a circuit to read tachometer signal pulses and written a Python script to interpret those pulses, but other features are still in development.</p>
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                        <img src="/assets/images/miata2.jpg" class="project-image"></img>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="card project-card">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="project-title">Pride watch bands</h3>
+                        <p>After scouring the Internet in an attempt to buy a bi pride watch band, I realized that nobody sold them. I decided to change that.</p>
+                        <p>I worked with a watch band manufacturer via Alibaba, ordered a bulk run, and began selling them on <a href="https://www.ebay.com/itm/Bi-Bisexual-Pride-One-Piece-Nylon-Watch-Strap-20-mm-50-to-Trevor-Project/124251193226">eBay</a>.</p>
+                        <p>They've since spread to seven countries across three continents, raising $200+ for <a href="https://www.thetrevorproject.org/">The Trevor Project</a>, a non-profit dedicated to suicide prevention in LGBTQ youth.</p>
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                        <img src="/assets/images/watch-bands.jpg" class="project-image"></img>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+
+        <!-- Do you want to include resume sections? 
+        <div class="card" id="work-experience">
+            <h2 class="card-title">Work Experience</h2>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="assets/images/headshot.jpg" class="resume-image"></img>
+                </div>
+                <div class="col-sm-9">
+                    <h3 class="resume-subtitle">Company</h3>
+                    <h4 class="resume-subtitle-subtitle">Position</h4>
+                    <p>
+                        <ol>
+                            <li>I did this</li>
+                            <li>and this</li>
+                            <li>This also</li>
+                        </ol>
+                    </p>
+
+                    <h3 class="resume-subtitle">Company</h3>
+                    <h4 class="resume-subtitle-subtitle">Position</h4>
+                    <p>
+                        <ol>
+                            <li>I did this</li>
+                            <li>and this</li>
+                            <li>This also</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="education">
+            <h2 class="card-title">Education</h2>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="assets/images/headshot.jpg" class="resume-image"></img>
+                </div>
+                <div class="col-sm-9">
+                    <h3 class="resume-subtitle">Company</h3>
+                    <h4 class="resume-subtitle-subtitle">Position</h4>
+                    <p>
+                        <ol>
+                            <li>I did this</li>
+                            <li>and this</li>
+                            <li>This also</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+</div>
