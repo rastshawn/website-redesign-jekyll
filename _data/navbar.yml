@@ -1,6 +1,6 @@
 - name: Home
   link: /
 - name: Contact
-  link: /contact
+  link: /contact.html
 - name: Resume
   link: /assets/resume.pdf
